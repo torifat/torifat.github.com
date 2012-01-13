@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Cloud Thinking]]></title>
-  <link href="http://torifat.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Textmate | Cloud Thinking]]></title>
+  <link href="http://torifat.github.com/blog/categories/textmate/atom.xml" rel="self"/>
   <link href="http://torifat.github.com/"/>
   <updated>2012-01-13T21:50:08+06:00</updated>
   <id>http://torifat.github.com/</id>
@@ -20,16 +20,12 @@
     <id>http://torifat.github.com/blog/2012/01/13/preparing-my-textmate</id>
     <content type="html"><![CDATA[<p>Once the <code>TextMate</code> is installed. First, I install the <code>GetBundles</code> bundle using the commands below from my <code>Terminal</code>.</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>mkdir -p ~/Library/Application<span class="se">\ </span>Support/TextMate/Bundles
-</span><span class='line'><span class="nb">cd</span> !<span class="err">$</span>
-</span><span class='line'>svn co http://svn.textmate.org/trunk/Review/Bundles/GetBundles.tmbundle/
-</span><span class='line'>osascript -e <span class="s1">&#39;tell app &quot;TextMate&quot; to reload bundles&#39;</span>
-</span></code></pre></td></tr></table></div></figure>
-
+<p><code>bash
+mkdir -p ~/Library/Application\ Support/TextMate/Bundles
+cd !$
+svn co http://svn.textmate.org/trunk/Review/Bundles/GetBundles.tmbundle/
+osascript -e 'tell app "TextMate" to reload bundles'
+</code></p>
 
 <p>Then I goto <code>Bundles &gt; GetBundles &gt; Get Bundles</code> and update my outdated bundles by pressing <code>⌘+U</code> (Install all Updates). After that, I install the following bundles -</p>
 
